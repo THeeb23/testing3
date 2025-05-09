@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Papa Louie Game</title>
+  </head>
+  <body>
+    <script src="ruffle.js"></script>
+    <div id="game"></div>
+    <script>
+      const ruffle = window.RufflePlayer.newest();
+      const player = ruffle.createPlayer();
+      document.getElementById("game").appendChild(player);
+      player.load("PapaLouie.swf");
+    </script>
+  </body>
+</html>
